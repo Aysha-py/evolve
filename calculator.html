@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#list_of_games">List of games</a></li>
+                    <li><a href="#about">About</a></li>
+                    <div class="dropdown">
+                        <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
+                        <div id="mydropdown" class="dropdown-list">
+                            <a href="Saythedate.html">Say the date</a>
+                            <a href="calculator.html">calculator</a>
+                            <a href="age">Say my age</a>
+                        </div>
+                       
+                    </div>
+
+                    <button id="switch" onclick="darkMode()" type="button">DARK MODE</button>
+                    
+                
+    
+                </ul>
+                
+                
+            </nav>
+      
+        </header>
+
+
+        <form class="myform">
+            <h1>Welcome to the say the calculator page</h1>
+            <label>Name:</label>
+            <input type="text" name="name" id="tru" value="">
+            <label>which Calculation would you love to do</label>
+            <select>
+                <option>Addition</option>
+                <option>Subtraction</option>
+                <option>Multiplication</option>
+                <option>Division</option>
+
+            </select>
+
+            <div class="calc">
+
+
+                <table>
+                    <tr>
+                        <td><input type="text" id="calcspace"></td>
+                    </tr>
+                </table>
+                <table>
+                    
+
+                    <tr>
+                        <td><input type="button" value="AC" onclick=""></td>
+                        <td><input type="button" value="+/-" onclick=""></td>
+                        <td><input type="button" value="%" onclick=""></td>
+                        <td><input type="button" value="/" onclick=""></td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="7" onclick="7"></td>
+                        <td><input type="button" value="8" onclick="8"></td>
+                        <td><input type="button" value="9" onclick="9"></td>
+                        <td><input type="button" value="x" onclick=""></td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="4" onclick="4"></td>
+                        <td><input type="button" value="5" onclick="5"></td>
+                        <td><input type="button" value="6" onclick="6"></td>
+                        <td><input type="button" value="-" onclick=""></td>
+                       
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="1"></td>
+                        <td><input type="button" value="2" onclick="2"></td>
+                        <td><input type="button" value="3" onclick="3"></td>
+                        <td><input type="button" value="+" onclick=""></td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="0" onclick=""></td>
+                        <td><input type="button" value="." onclick=""></td>
+                        <td><input type="button" value="=" onclick=""></td>
+                        
+                       
+                    </tr>
+                </table>
+
+            </div>
+            
+            
+        </form>
+    <script>
+        function darkMode(){
+
+
+              document.body.classList.toggle("dark-mode");
+        }
+     </script>   
+      
+            
+        
+</body>
+</html>

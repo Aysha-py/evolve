@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolve gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <main>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#list_of_games">List of games</a></li>
+                    <li><a href="#about">About</a></li>
+                    <div class="dropdown">
+                        <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
+                        <div id="mydropdown" class="dropdown-list">
+                            <a href="Saythedate.html">Say the date</a>
+                            <a href="calc">calculator</a>
+                            <a href="age">Say my age</a>
+                        </div>
+
+                       
+
+
+                       
+                    </div>
+    
+                </ul>
+                
+                
+            </nav>
+      
+        </header>
+        </main>
+
+        <div class="say_the_date">
+            
+        </div>
+         
+       
+        <form class="myform">
+            <h1>Welcome to the say the date page</h1>
+            <label>Name:</label>
+            <input type="text" name="name" id="tru" value="">
+            <button id="click" onClick = "dateSay() ;return false ;">Reveal Today's date</button>
+            
+        </form>
+
+
+        
+
+        
+       
+
+        <script>
+            function dateSay(){
+
+                var input = document.getElementById("tru").value;
+
+
+             document.getElementById("date").innerHTML= ("Welcome " + input +" Today date is " + new Date());
+
+            }
+            
+            setTimeout(() => {
+                alert("Now that you know the time, allow your friend input their name and check the time too. kindly click on the RESET button")
+                
+            }, 
+            
+            10*1000);
+            
+           
+           function cls(){
+
+            document.getElementById("tru").value= "";
+            
+
+           }
+
+
+        </script>
+
+        <p id="date"></p>
+
+        <button type="reset" onclick= "cls()"" id="quit">RESET</button>
+        
+   
+
+    </body>
+</html>

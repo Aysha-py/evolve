@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    width: 100vw;
+    height: auto;
+
+   
+}
+.dark-mode{
+    background-color: black;
+    color:white;
+
+}
+
+#switch{
+    height:40px;
+    padding: 10px;
+    margin-top:12px;
+}
+.navbar{
+    background-color: white;
+    padding: 10px;
+    
+    background-color: #3498db;
+    
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;
+    margin-left: 800px;
+
+    
+   
+}
+.navbar li{
+    font-size: 1.2rem;
+    margin-top: 20px;
+   margin-bottom:20px;
+    
+    
+   
+
+    
+    
+    
+}
+.navbar a{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    float: left;
+    text-decoration: none;
+    
+}
+    
+
+.brief_intro{
+    width:50vw;
+    height:30vh;
+    text-align: center;
+    margin: auto;
+    border:1px solid rgb(65, 61, 61);
+    padding: 20px;
+    border-radius: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+
+}
+.brief_intro p{
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 50px;
+    
+   
+}
+.myform{
+    margin: auto;
+    align-items: center;
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    width: 50vw;
+    padding: 20px;
+    margin:20px;
+    
+}
+label{
+    margin: 15px;
+}
+
+input, select{
+    width:300px;
+    height: 30px;
+    border:1px solid;
+    border-radius: 6px;
+   border-color: #3498db;
+   
+}
+
+
+input:hover{
+    background-color: chartreuse;
+
+}
+
+textarea{
+    width: 20vw;
+}
+
+.dropbtn{
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 25px;
+    border:none;
+}
+.dropbtn:hover{
+    background-color: #456745
+    ;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-list{
+    display: none;
+    position:absolute;
+    background-color: #f1f1f1;
+    overflow: auto;
+    min-width: 160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-list a{
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+.show{
+    display: block;
+}
+.submitbtn{
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    border:none;
+
+    margin: 20px;
+}
+#quit{
+    height:40px;
+    padding: 10px;
+    margin-top:12px;
+    margin-left: 60rem;
+    
+}
+tr input{
+    width:5vw;
+    background-color:white;
+    border:1px solid;
+    border-radius: 150px;
+}
+#calcspace{
+    width: 20vw;
+    height: 60px;
+}
+
+@media  screen and (max-width:420px){
+    .navbar{
+        width: 100vw;
+        height: 300px;
+        display: flex;
+       
+       
+    }
+
+  
+        .navbar ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-left: 1rem;
+            
+           
+    }
+        .navbar ul a{
+            color:white;
+            font-size:1rem;
+            text-decoration: none;
+            
+    }
+    .brief_intro{
+        width: 80vw;
+        
+    }
+    .brief_intro p{
+        line-height: 2rem;
+    }
+
+    form{
+        width: 80vw;
+    }
+
+    .dropdown{
+        margin-left:-25px;
+    }
+
+}

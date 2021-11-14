@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolve gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <main>
+
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#list_of_games">List of games</a></li>
+                    <li><a href="#about">About</a></li>
+                    <div class="dropdown">
+                        <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
+                        <div id="mydropdown" class="dropdown-list">
+                            <a href="Saythedate.html">Say the date</a>
+                            <a href="calculator.html">calculator</a>
+                            <a href="age">Say my age</a>
+                        </div>
+                       
+                    </div>
+
+                    <button id="switch" onclick="darkMode()" type="button">
+                    
+                    Dark Mode
+                    </button>
+
+
+
+
+    
+                </ul>
+                
+                
+            </nav>
+      
+        </header>
+
+        <section class="brief_intro">
+            <p>Welcome to the my mini games page. Kindly click on List
+                of games on <a href="#list_of_games">Here</a> to start playing your
+                desired game. Before proceeding to games, fill the form below to get 
+                regular updates on Tech.
+            </p>
+
+        </section>
+        <form class="myform">
+            <h1>FEEDBACK FORM</h1>
+            <label>Name:</label>
+            <input type="text" class="name" required>
+            <label>Email Adress:</label>
+            <input type="email" class="email" required>
+            <Label>How do you hear about this game</Label>
+            <select>
+                <option>Facebook</option>>
+                <option>Instagram</option>
+                <option>Twitter</option>
+                <option>Whatsapp</option>
+                <option>Through a fried</option>
+                <option>Others</option>
+            </select>
+           
+            <label>Kindly fill the aspect you would like us to improve</label>
+            <textarea name="improvement" cols="1" rows="3">Enter your suggestions</textarea>
+
+            <button type="submit" class="submitbtn">SEND</button>
+        </form>
+        <script>
+            function dropFunction(){
+                document.getElementById("mydropdown").classList.toggle("show");
+            }
+
+            function darkMode(){
+
+
+              document.body.classList.toggle("dark-mode");
+            }
+
+           
+                
+            
+
+        </script>
+    </main>
+
+    
+</body>
+</html>
