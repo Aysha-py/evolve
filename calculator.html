@@ -55,41 +55,42 @@
 
 
                 <table>
-                    <tr>
-                        <td><input type="text" id="calcspace"></td>
-                    </tr>
-                </table>
+                <tr>
+                    <p id="calcspace"></p>
+                </tr>
+                  
+                </div>
                 <table>
                     
 
                     <tr>
-                        <td><input type="button" value="AC" onclick=""></td>
-                        <td><input type="button" value="+/-" onclick=""></td>
-                        <td><input type="button" value="%" onclick=""></td>
-                        <td><input type="button" value="/" onclick=""></td>
+                        <td><input type="button"  value="AC" onclick="cls()" id="reset"></td>
+                        <td><input type="button" value="+/-" onclick="" id="myBtn"></td>
+                        <td><input type="button" value="%"  onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="/"  onclick="showNumber(this)" id="myBtn"></td>
                        
                     </tr>
 
                     <tr>
-                        <td><input type="button" value="7" onclick="7"></td>
-                        <td><input type="button" value="8" onclick="8"></td>
-                        <td><input type="button" value="9" onclick="9"></td>
-                        <td><input type="button" value="x" onclick=""></td>
+                        <td><input type="button" value="7" onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="8" onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="9" onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="x" onclick="showNumber(this)" id="myBtn"></td>
                        
                     </tr>
 
                     <tr>
-                        <td><input type="button" value="4" onclick="4"></td>
-                        <td><input type="button" value="5" onclick="5"></td>
-                        <td><input type="button" value="6" onclick="6"></td>
-                        <td><input type="button" value="-" onclick=""></td>
+                        <td><input type="button" value="4"  onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="5"  onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="6"  onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="-"  onclick="showNumber(this)" id="myBtn"></td>
                        
                     </tr>
                     <tr>
-                        <td><input type="button" value="1" onclick="1"></td>
-                        <td><input type="button" value="2" onclick="2"></td>
-                        <td><input type="button" value="3" onclick="3"></td>
-                        <td><input type="button" value="+" onclick=""></td>
+                        <td><input type="button" value="1"  onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="2"  onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="3"  onclick="showNumber(this)" id="myBtn"></td>
+                        <td><input type="button" value="+"  onclick="addition(5,6)" id="myBtn"></td>
                        
                     </tr>
 
@@ -112,6 +113,28 @@
 
               document.body.classList.toggle("dark-mode");
         }
+
+        function showNumber(button){
+            var x = button.value;
+            document.getElementById("calcspace").innerText= x;
+        }
+
+        function cls(){
+
+            document.getElementById("calcspace").innerText= "0";
+
+
+        }
+        function addition(a,b){
+         var W= a +b;
+         document.getElementById("calcspace").innerText= W;
+         
+
+        }
+        
+     
+    
+ 
      </script>   
       
             

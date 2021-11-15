@@ -207,6 +207,7 @@ tr input{
     .brief_intro{
         width: 80vw;
         
+        
     }
     .brief_intro p{
         line-height: 2rem;
@@ -214,10 +215,35 @@ tr input{
 
     form{
         width: 80vw;
+        
+    }
+    .myform{
+        margin-top:20px;
     }
 
     .dropdown{
         margin-left:-25px;
+    
+    }
+    #mydropdown a{
+        color: black;
     }
 
+    table{
+        width:60vw;
+        
+    }
+
+    tr input{
+        width:50px;
+    }
+    #calcspace{
+        width:60vw;
+        border:1px solid;
+    }
+
+    #date{
+        width: 300px;
+        padding: 20px;
+    }
 }
