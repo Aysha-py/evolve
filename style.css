@@ -246,4 +246,8 @@ tr input{
         width: 300px;
         padding: 20px;
     }
+    
+.carousel-slide{
+    padding-top: 100px;
+  }
 }
