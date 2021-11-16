@@ -179,6 +179,10 @@ tr input{
     width: 20vw;
     height: 60px;
 }
+.link{
+    text-decoration: none;
+    color:black;
+}
 
 @media  screen and (max-width:420px){
     .navbar{

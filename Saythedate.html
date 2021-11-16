@@ -22,10 +22,13 @@
                         <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
                         <div id="mydropdown" class="dropdown-list">
                             <a href="Saythedate.html">Say the date</a>
-                            <a href="calc">calculator</a>
+                            <a href="calculator.html">calculator</a>
                             <a href="age">Say my age</a>
                         </div>
-
+                        <button id="switch" onclick="darkMode()" type="button">
+                    
+                            Dark Mode
+                            </button>
                        
 
 
@@ -60,6 +63,15 @@
        
 
         <script>
+
+            function dropFunction(){
+                document.getElementById("mydropdown").classList.toggle("show");
+            }
+
+            function darkMode(){
+                document.body.classList.toggle("dark-mode")
+            }
+
             function dateSay(){
 
                 var input = document.getElementById("tru").value;
