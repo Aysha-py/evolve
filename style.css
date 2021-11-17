@@ -184,6 +184,10 @@ tr input{
     color:black;
 }
 
+.carousel-container{
+    width: 100%;
+}
+
 @media  screen and (max-width:420px){
     .navbar{
         width: 100vw;
@@ -253,5 +257,7 @@ tr input{
     
 .carousel-slide{
     padding-top: 100px;
+    width: 100%;
   }
+
 }
